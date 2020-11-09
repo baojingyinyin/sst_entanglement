@@ -24,7 +24,7 @@ function setup() {
           ///////
 //  socket = io.connect ('http://localhost:3000');
           
- socket = io.connect ('https://baojing-online-game.herokuapp.com:3000');
+ socket = io.connect ('https://baojing-online-game.herokuapp.com/');
 //  socket = io.connect ('http://5392405bfb35.ngrok.io/');
           
   socket.on ('mouse', newDrawing);
