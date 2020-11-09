@@ -1,3 +1,5 @@
+console.log("This is app.js");
+
 // create an express app
 const express = require("express")
 const app = express()
@@ -14,7 +16,6 @@ app.get("/", function (req, res) {
 var server = app.listen(process.env.PORT || 3000, 
 	() => console.log("Server is running..."));
 
-
 //create socket 
 var socket = require('socket.io');
 var io = socket(server);
@@ -23,6 +24,7 @@ io.sockets.on('connection',newConnection);
 
 function newConnection(socket){
           
+
           console.log('new connection:'+socket.id); 
           socket.on('mouse',mouseMsg); 
           function mouseMsg(data){

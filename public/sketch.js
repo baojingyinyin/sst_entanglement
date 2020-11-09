@@ -5,11 +5,11 @@
 // ★
 // █████████████████████████████████████████████████
 
-var socket;
+let socket;
 
-var osc1;
-var osc2;
-var play=false;
+let osc1;
+let osc2;
+let play=false;
 
 
 // ▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂
@@ -24,7 +24,7 @@ function setup() {
           ///////
 //  socket = io.connect ('http://localhost:3000');
           
- socket = io.connect ('https://studio10-online-game.herokuapp.com/');
+ socket = io.connect ('https://studio10-online-game.herokuapp.com');
 //  socket = io.connect ('http://5392405bfb35.ngrok.io/');
           
   socket.on ('mouse', newDrawing);
